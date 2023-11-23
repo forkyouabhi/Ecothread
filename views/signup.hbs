@@ -3,19 +3,36 @@
 
 <head>
     {{>meta}}
-    <title>Document</title>
+    <title>Sign Up</title>
 </head>
 
-<body>
-    
-    <div class="msg">{{msg}}</div>
-    <h1>Signup Page</h1>
+<body class="text-center">
 
-    <form action="/signup" class="loginLocal" method="POST">
-        <input type="text" name="username" placeholder="Enter Username"><br>
-        <input type="password" name="password" placeholder="Enter Password"><br>
-        <button type="submit">Signup</button>
-    </form>
+    <div class="container text-center my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-image"><img src="../img/ic_launcher.png" alt="" srcset=""></div>
+                        <h1 class="card-title">Signup Page</h1>
+                        <form action="/signup" class="loginLocal" method="POST">
+                            <div class="mb-3">
+                                <label for="username" class="form-label">Username</label>
+                                <input type="text" class="form-control" name="username" id="username"
+                                    placeholder="Enter Username">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" name="password" id="password"
+                                    placeholder="Enter Password">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Signup</button>
+                             <button href="/login" class="btn btn-primary">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
 </body>
 
 </html>

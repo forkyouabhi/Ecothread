@@ -62,6 +62,7 @@ app.use('/login', ifNotLoggedIn, require('./routes/login'));
 const isLoggedIn = require('./middlewares/isLoggedIn');
 app.use('/admin', isLoggedIn, require('./routes/admin'));
 app.use('/shop', isLoggedIn, require('./routes/shop'));
+app.use('/', isLoggedIn, require('./routes/shop'));
 
 mongoose.connect(process.env.MONGO_URL)
     .then(() => {

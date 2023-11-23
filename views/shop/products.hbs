@@ -3,7 +3,7 @@
 
 <head>
     {{> meta}}
-    <title>Document</title>
+    <title>Shop</title>
     <link rel="stylesheet" href="/styles/navbar.css">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
@@ -14,7 +14,7 @@
     {{>addToCartSideView cartCount=cartCount}}
 
 
-    <div class="container">
+    <div class="container y-2">
         <div class="msg">{{msg}}</div>
         {{> shopProducts products=products}}
     </div>

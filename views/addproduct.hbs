@@ -3,7 +3,7 @@
 
 <head>
     {{> meta}}
-    <title>Document</title>
+    <title>List Your Product</title>
     <link rel="stylesheet" href="/styles/navbar.css">
 </head>
 
@@ -12,17 +12,62 @@
     {{>navbar isAdmin=isAdmin}}
     <div class="container">
         <div class="msg">{{msg}}</div>
-
-        <form action="/admin/add-product" class="addProduct" method="POST" enctype="multipart/form-data">
-            <input type="text" class="name" placeholder="Enter Name" name="name"><br>
-            Upload Image: <input type="file" class="image" name="image"><br>
-            <input type="text" class="price" placeholder="Enter Price" name="price"><br>
-            <textarea type="text" class="description" name="description">....Enter Description
-            </textarea><br>
-
-            <button type="submit" class="submitBtn">Add Product</button>
-        </form>
-
+    
+        <div class="col-md-7 col-lg-8">
+            <div class="card">
+            <div class="card-body">
+            <h4 class="mb-3">Product Listing</h4>
+            <form action="/admin/add-product" method="POST" enctype="multipart/form-data"
+                class="needs-validation addProduct" novalidate="">
+                <div class="row g-3"> 
+                    <div class="col-12">
+                        <label for="pName" class="form-label">Product Name</label>
+                        <div class="input-group has-validation">
+                            <input type="text" class="form-control" id="pName" name="name" placeholder="Your Product Name"
+                                required="">
+                            <div class="invalid-feedback">
+                                Product Name is required.
+                            </div>
+                            <div data-lastpass-icon-root="true"
+                                style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;">
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                    <div class="col-12">
+                        <label for="price" class="form-label">Price</label>
+                        $ <input type="Number" class="form-control" id="price" placeholder="5" name="price" required="">
+                        <div class="invalid-feedback">
+                            Please enter your price.
+                        </div>
+                    </div>
+    
+                    <div class="col-md-5">
+                        <label for="country" class="form-label">Upload an Image</label>
+                        <input type="file" class="image" name="image" required="">
+                        <div class="invalid-feedback">
+                            Please upload a product image.
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <label for="description" class="form-label">Description</label>
+                        <input type="text" class="form-control" id="description" placeholder="Enter text here.."
+                            name="description" required="">
+                        <div class="invalid-feedback">
+                            Please write a brief description.
+                        </div>
+                    </div>
+    
+    
+                    <hr class="my-4">
+    
+                    <button class="w-100 btn btn-primary btn-lg" type="submit">Add</button>
+            </form>
+        </div>
+            </div>
+    </div>
+    
     </div>
 
 </body>

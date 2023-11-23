@@ -3,18 +3,43 @@
 
 <head>
     {{>meta}}
-    <title>Document</title>
+    <title>Login</title>
 </head>
 
 <body>
-    <div class="msg">{{msg}}</div>
-    <h1>Login Page</h1>
 
-    <form action="/login" class="loginLocal" method="POST">
-        <input type="text" name="username" placeholder="Enter Username"><br>
-        <input type="password" name="password" placeholder="Enter Password"><br>
-        <button type="submit">Login</button>
-    </form>
+    <div class="container text-center my-5">
+        <div class="row justify-content-center">
+            <div class="msg col-12">{{msg}}</div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-image"><img src="../img/ic_launcher.png" alt="" srcset=""></div>
+                        <div class="card-title">Login Page</div>
+                        <form action="/login" class="loginLocal" method="POST">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Username</label>
+                                <input type="text" class="form-control" name="username" placeholder="Enter Username"
+                                    id="exampleInputEmail1" aria-describedby="usernameHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" name="password" placeholder="Enter your password!" class="form-control"
+                                    id="exampleInputPassword1">
+                            </div>
+                             
+                            <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary" type="button">Sumbit</button>
+                            <a href="/signup"class="btn btn-primary" type="button">Signup</a>
+                        </div>                          
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>

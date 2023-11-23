@@ -23,7 +23,8 @@ module.exports.postAddProduct = async (req, res, next) => {
         const parser = new DatauriParser();
 
         cloudinary.uploader.upload(parser.format('.png', req.file.buffer).content, async (error, result) => {
-            // console.log(result, error);
+            console.log(process.env.CLOUDINARY_API_KEY);
+            console.log(result, error);
             try {
                 await Products.create({
                     name,

@@ -1,20 +1,36 @@
-<nav class="navbar">
-    <a class="navItem" href="#">Shop</a>
-    <a class="navItem" href="#">Profile</a>
-    <a class="navItem" href="/shop/products">Products</a>
-    {{#if this.isAdmin}}
-    <a class="navItem" href="/admin/products">Admin Products</a>
-    <a class="navItem" href="/admin/add-product">Add Products</a>
-    {{/if}}
-    <a class="navItem" href="#">
-        <span class="cartName">
-            CART
-            {{#if cartCount}}
-            <span class="cartCount">{{cartCount}}</span>
-            {{else}}
-            <span class="cartCount"></span>
-            {{/if}}
-        </span>
-    </a>
-    <a href="/logout" class="navItem">Logout</a>
-</nav>
+
+<header class="border-bottom y-3">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-1 mb-lg-0 link-body-emphasis text-decoration-none">
+          <img src="../img/ic_launcher.png" class="rounded-0" width="50%">
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="/" class="nav-link px-2 link-secondary">Home</a></li>
+          <li><a href="/shop/products" class="nav-link px-2 link-body-emphasis">Our Products</a></li>
+          {{#if this.isAdmin}}
+          <li><a href="/admin/products" class="nav-link px-2 link-body-emphasis">Your Listings</a></li>
+          <li><a href="/admin/add-product" class="nav-link px-2 link-body-emphasis">List your Product</a></li>
+          {{/if}}
+
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+        </form>
+
+        <div class="dropdown text-end">
+           
+          <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" alt="mdo" width="32" height="32" class="rounded-circle">
+          </a>
+          <ul class="dropdown-menu text-small">            
+            <li><a class="dropdown-item" href="/shop/profile">Profile</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/logout">Sign out</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
