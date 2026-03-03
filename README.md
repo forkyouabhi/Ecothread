@@ -1,13 +1,10 @@
 
----
-
 # EcoThread
 
 EcoThread is a full-stack web application developed using Node.js, Express, and MongoDB. The project focuses on building a structured backend system with authentication, session management, and server-side rendering.
 
 The objective of this group project was to strengthen understanding of backend development concepts such as user authentication, middleware design, database modeling, and modular application architecture within a collaborative development environment.
 
----
 
 ## Overview
 
@@ -19,8 +16,6 @@ EcoThread provides the following functionality:
 * Profile and shop-style pages accessible after authentication
 
 The application follows a modular structure to ensure separation of concerns and maintainable code organization.
-
----
 
 ## Tech Stack
 
@@ -45,8 +40,6 @@ The application follows a modular structure to ensure separation of concerns and
 * Multer (file uploads)
 * dotenv (environment configuration)
 
----
-
 ## Project Structure
 
 ```
@@ -63,7 +56,6 @@ The application follows a modular structure to ensure separation of concerns and
 
 This structure improves readability, scalability, and ease of future development.
 
----
 
 ## Installation & Setup
 
@@ -101,8 +93,6 @@ The application runs on:
 http://localhost:4444
 ```
 
----
-
 ## Key Concepts Demonstrated
 
 * Implementation of local authentication using Passport.js
@@ -111,7 +101,6 @@ http://localhost:4444
 * File upload handling with Multer
 * Server-side rendering with Handlebars
 
----
 
 ## Future Enhancements
 
@@ -120,11 +109,9 @@ http://localhost:4444
 * Role-based access control
 * Addition of automated testing
 
----
 
 ## License
 
 ISC License (as specified in `package.json`).
 
----
 
