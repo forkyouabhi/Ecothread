@@ -11,20 +11,20 @@
     </div>
     {{/each}}
 </div> --}}
-<div class="row row-cols-1 row-cols-md-3 g-4">
+<div class="row row-cols-1 row-cols-md-3 g-4 productsList">
+  {{#each this.products as |product|}}
   <div class="col">
-    {{#each this.products as |product|}}
     <div class="card">
-      <img src="{{product.imageUrl}}" class="card-img-top" alt="..." wdith="30%">
+      <img src="{{product.imageUrl}}" class="card-img-top" alt="{{product.name}}">
       <div class="card-body">
         <h5 class="card-title">{{product.name}}</h5>
         <p class="card-text">{{product.description}}</p>
       </div>
        <div class="card-footer">
         {{!-- <small class="price">$ <bold>{{product.price}}</bold> </small> --}}
-        <small class="btn btn-primary addToCart">Delete</small>
-        <small class="btn btn-primary addToCart">Update</small>
-        <small class="btn btn-primary addToCart">Details</small>
+        <button type="button" class="btn btn-primary addToCart">Delete</button>
+        <button type="button" class="btn btn-primary addToCart">Update</button>
+        <button type="button" class="btn btn-primary addToCart">Details</button>
       </div>
     </div>
   </div>

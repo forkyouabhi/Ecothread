@@ -1,0 +1,3 @@
+## 2024-04-05 - Replacing <small> tags with semantic <button> elements
+**Learning:** Found an accessibility issue pattern where primary action elements (like "Add To Cart", "Delete") were implemented using non-semantic `<small>` tags styled as buttons via Bootstrap classes. This completely broke keyboard navigation (tabbing) and hindered screen readers from identifying these critical interactions as buttons.
+**Action:** When converting visually styled elements into actions, always ensure the underlying HTML element is semantic (`<button type="button">` or `<a>`). This allows native focus states and screen reader compatibility right out of the box.
