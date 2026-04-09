@@ -1,0 +1,3 @@
+## 2025-02-23 - [Add Autocomplete and Validation to Auth Forms]
+**Learning:** Utilizing autocomplete attributes on authentication forms significantly improves accessibility for password managers and assistive technologies, providing immediate context to what the inputs are meant for.
+**Action:** Consistently add `autocomplete="username"`, `autocomplete="current-password"`, and `autocomplete="new-password"` along with `required` validation on all relevant authentication form fields.
