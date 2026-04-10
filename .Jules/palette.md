@@ -1,0 +1,3 @@
+## 2024-05-20 - Contextual ARIA labels on repeated action buttons
+**Learning:** When using Handlebars to loop over a list of items to generate buttons that have identical visual text (like "Add to Cart" or "Delete"), screen readers need contextual differentiation. Without it, users hear the same action repeatedly without knowing which item it applies to.
+**Action:** Always include contextual `aria-label`s on action buttons in loops (e.g., `aria-label="Add {{product.name}} to cart"`).
