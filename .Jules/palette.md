@@ -1,0 +1,3 @@
+## 2026-04-11 - Clear Visual Hierarchy in Form Actions
+**Learning:** Having competing primary actions (e.g., both "Submit" and "Signup" styled as primary buttons) creates confusion and a poor user experience. Also using a button element to perform standard navigation with an href instead of an anchor element violates semantic HTML which damages accessibility and can lead to unexpected behavior during form submission.
+**Action:** Ensure forms use standard anchor tags for navigation links instead of buttons with href. Establish clear visual hierarchy by styling primary form actions as solid buttons and secondary navigation actions as outline buttons or standard links.
