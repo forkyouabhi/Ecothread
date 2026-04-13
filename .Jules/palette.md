@@ -1,0 +1,3 @@
+## 2025-02-27 - Incorrect Semantic HTML for Navigation
+**Learning:** Discovered `<button href="...">` used for navigation in auth forms. This is invalid HTML and can cause a few issues: `href` is not a valid attribute for buttons, and an unspecified button type defaults to "submit", causing unintended form submissions. Furthermore, it degrades the screen reader experience.
+**Action:** Use semantic HTML (`<a>` for navigation). If button styling is desired, use Bootstrap's `.btn` classes on the anchor tag. Keep this top-of-mind when auditing interactive components inside forms.
