@@ -12,21 +12,21 @@
     {{/each}}
 </div> --}}
 <div class="row row-cols-1 row-cols-md-3 g-4">
+  {{#each this.products as |product|}}
   <div class="col">
-    {{#each this.products as |product|}}
     <div class="card">
-      <img src="{{product.imageUrl}}" class="card-img-top" alt="Image of {{product.name}}">
+      <img src="{{product.imageUrl}}" class="card-img-top" alt="{{product.name}}" width="30%">
       <div class="card-body">
         <h5 class="card-title">{{product.name}}</h5>
         <p class="card-text">{{product.description}}</p>
       </div>
        <div class="card-footer">
         {{!-- <small class="price">$ <bold>{{product.price}}</bold> </small> --}}
-        <button type="button" aria-label="Delete {{product.name}}" class="btn btn-primary addToCart">Delete</button>
-        <button type="button" aria-label="Update {{product.name}}" class="btn btn-primary addToCart">Update</button>
-        <button type="button" aria-label="Details for {{product.name}}" class="btn btn-primary addToCart">Details</button>
+        <button type="button" class="btn btn-primary addToCart" aria-label="Delete {{product.name}}">Delete</button>
+        <button type="button" class="btn btn-primary addToCart" aria-label="Update {{product.name}}">Update</button>
+        <button type="button" class="btn btn-primary addToCart" aria-label="Details for {{product.name}}">Details</button>
       </div>
     </div>
   </div>
-   {{/each}}
+  {{/each}}
 </div>
