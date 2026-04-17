@@ -28,5 +28,16 @@
       </div>
     </div>
   </div>
+  {{else}}
+  <div class="col-12 text-center py-5 w-100">
+    <div class="text-muted mb-3">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-box-seam" viewBox="0 0 16 16" aria-hidden="true">
+        <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.84l-6.5-2.6v7.922l6.5 2.6zM5.22 4.243l-2.404-.961L8 1.113l2.404.961L5.22 4.243z"/>
+      </svg>
+    </div>
+    <h4>No products listed yet</h4>
+    <p class="text-muted mb-4">You haven't listed any products yet. Let's get started!</p>
+    <a href="/admin/add-product" class="btn btn-primary">List Your First Product</a>
+  </div>
   {{/each}}
 </div>

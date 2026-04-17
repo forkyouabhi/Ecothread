@@ -4,3 +4,6 @@
 ## 2024-05-24 - [Contextual ARIA Labels for Grids/Lists]
 **Learning:** Adding contextual ARIA labels (e.g., `aria-label="Add {{product.name}} to cart"`) to icon-only or repeated action buttons inside grid/list structures is crucial for accessibility. Without it, screen reader users will just hear "Add To Cart" repeated over and over, lacking necessary context.
 **Action:** When implementing grid layouts or lists where an identical action (like "Add to Cart", "Delete", or "Update") is repeated, ensure the button’s `aria-label` includes a contextual identifier, typically the item name.
+## 2024-05-18 - Adding Empty States to Product Grids
+**Learning:** When data grids (like product lists) are empty, a blank page can be confusing for users (making them think the page is still loading or broken).
+**Action:** Always include an empty state (`{{else}}` in Handlebars lists) with a friendly icon/graphic, explanatory text, and ideally a clear call-to-action (like "List Your First Product" for admins).
