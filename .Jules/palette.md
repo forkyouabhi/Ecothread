@@ -1,3 +1,6 @@
+## 2024-04-07 - Use interactive elements for primary actions
+**Learning:** Found a pattern of using non-interactive `<small>` elements styled as buttons for critical actions (Add to Cart, Delete, Update, Details). This breaks keyboard accessibility (tab focus) and screen reader semantics.
+**Action:** Replaced all `<small>` "buttons" with semantic `<button>` elements to ensure proper keyboard navigation and accessibility.
 ## 2024-06-25 - Async Button Feedback Pattern
 **Learning:** Add to cart operations lack visual feedback, making users unsure if the action succeeded without checking the side view cart. This leads to double-clicks and confusion. Adding a temporary "Added!" state with a success color (btn-success) provides clear confirmation.
 **Action:** Always include inline loading ("Adding...") and temporary success states ("Added!" with color change) for asynchronous shopping actions before returning the button to its default state.
