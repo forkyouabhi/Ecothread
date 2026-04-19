@@ -20,11 +20,21 @@
         <h5 class="card-title">{{product.name}}</h5>
         <p class="card-text">{{product.description}}</p>
       </div>
-       <div class="card-footer">
+       <div class="card-footer d-flex gap-2 justify-content-center flex-wrap">
         {{!-- <small class="price">$ <bold>{{product.price}}</bold> </small> --}}
-        <button type="button" class="btn btn-primary addToCart" aria-label="Delete {{product.name}}">Delete</button>
-        <button type="button" class="btn btn-primary addToCart" aria-label="Update {{product.name}}">Update</button>
-        <button type="button" class="btn btn-primary addToCart" aria-label="Details for {{product.name}}">Details</button>
+        <button type="button" class="btn btn-outline-danger" aria-label="Delete {{product.name}}">Delete</button>
+        <button type="button" class="btn btn-outline-secondary" aria-label="Update {{product.name}}">Update</button>
+        <button type="button" class="btn btn-primary" aria-label="Details for {{product.name}}">Details</button>
+      </div>
+    </div>
+  </div>
+  {{else}}
+  <div class="col-12 text-center py-5">
+    <div class="card shadow-sm border-0">
+      <div class="card-body py-5">
+        <h4 class="card-title mb-3">No products yet</h4>
+        <p class="card-text text-muted mb-4">Start building your catalog by listing your first product.</p>
+        <a href="/admin/add-product" class="btn btn-primary btn-lg" aria-label="List a new product">List a Product</a>
       </div>
     </div>
   </div>
