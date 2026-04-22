@@ -2,6 +2,8 @@
 > majorproject@1.0.0 start /app
 > node app.js
 
-(node:47392) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(node:75705) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 http://localhost:4444
+Terminated
+ ELIFECYCLE  Command failed with exit code 143.
