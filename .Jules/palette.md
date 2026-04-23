@@ -21,3 +21,6 @@
 ## 2024-05-25 - [Visual Hierarchy and Empty States in Admin Views]
 **Learning:** Having multiple primary buttons for destructive (Delete) and editing (Update) actions on the same card creates cognitive overload and increases the risk of accidental clicks. Additionally, list views without empty states leave users confused about next steps.
 **Action:** Always apply semantic button variants (`btn-outline-danger` for delete, `btn-outline-secondary` for edit) to differentiate actions. Provide an empty state with a clear, primary Call to Action (like "List a Product") when lists are empty.
+## 2024-05-31 - [Multiline Text Inputs for Descriptions]
+**Learning:** Using a single-line `<input type="text">` for fields that naturally require longer, detailed content (like a product description) provides a poor user experience. Text gets truncated visually as the user types, making it difficult to review or edit their full entry.
+**Action:** Always use `<textarea>` elements with appropriate `rows` attributes for fields expecting lengthy input. Include clear placeholder text that guides the user on what details to provide.
