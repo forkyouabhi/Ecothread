@@ -21,3 +21,6 @@
 ## 2024-05-25 - [Visual Hierarchy and Empty States in Admin Views]
 **Learning:** Having multiple primary buttons for destructive (Delete) and editing (Update) actions on the same card creates cognitive overload and increases the risk of accidental clicks. Additionally, list views without empty states leave users confused about next steps.
 **Action:** Always apply semantic button variants (`btn-outline-danger` for delete, `btn-outline-secondary` for edit) to differentiate actions. Provide an empty state with a clear, primary Call to Action (like "List a Product") when lists are empty.
+## 2026-04-24 - Form Autocomplete for Authentication
+**Learning:** Found authentication forms missing `autocomplete` attributes. Without these, password managers cannot reliably prompt to save or fill credentials, which forces manual entry and negatively impacts UX and accessibility (WCAG 1.3.5 Identify Input Purpose). The submit button on the login form also used generic text ('Submit') instead of a clear action descriptor ('Login').
+**Action:** Always add appropriate `autocomplete` attributes to login (`username`, `current-password`) and signup (`username`, `new-password`) forms. Ensure primary form submission buttons use clear, action-oriented text (e.g., 'Login' or 'Sign Up').
