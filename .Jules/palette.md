@@ -21,3 +21,7 @@
 ## 2024-05-25 - [Visual Hierarchy and Empty States in Admin Views]
 **Learning:** Having multiple primary buttons for destructive (Delete) and editing (Update) actions on the same card creates cognitive overload and increases the risk of accidental clicks. Additionally, list views without empty states leave users confused about next steps.
 **Action:** Always apply semantic button variants (`btn-outline-danger` for delete, `btn-outline-secondary` for edit) to differentiate actions. Provide an empty state with a clear, primary Call to Action (like "List a Product") when lists are empty.
+
+## 2024-05-31 - Improved Input Types for Forms
+**Learning:** Using simple text inputs for potentially long product descriptions restricts the user's view, and not restricting file inputs to images can lead to incorrect file types being uploaded and errors. Utilizing `textarea` for descriptions and `accept="image/*"` for image file inputs immediately improves the user experience by anticipating user needs and providing correct UI affordances.
+**Action:** Always prefer `textarea` for inputs likely to exceed one line, and use specific `accept` attributes on file inputs to improve OS dialog behavior.
