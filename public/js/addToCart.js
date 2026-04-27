@@ -7,7 +7,7 @@ productsList.addEventListener('click', async (ev) => {
         let originalText = button.innerText;
 
         button.disabled = true;
-        button.innerText = 'Adding...';
+        button.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Adding...';
 
         console.log(productId);
         try {
