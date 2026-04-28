@@ -17,14 +17,14 @@
                         <h1 class="card-title">Signup Page</h1>
                         <form action="/signup" class="loginLocal" method="POST">
                             <div class="mb-3">
-                                <label for="username" class="form-label">Username</label>
+                                <label for="username" class="form-label">Username <span class="text-danger" aria-hidden="true" title="Required">*</span></label>
                                 <input type="text" class="form-control" name="username" id="username"
-                                    placeholder="Enter Username" required>
+                                    placeholder="Enter Username" autocomplete="username" autofocus required>
                             </div>
                             <div class="mb-3">
-                                <label for="password" class="form-label">Password</label>
+                                <label for="password" class="form-label">Password <span class="text-danger" aria-hidden="true" title="Required">*</span></label>
                                 <input type="password" class="form-control" name="password" id="password"
-                                    placeholder="Enter Password" required>
+                                    placeholder="Enter Password" autocomplete="new-password" required>
                             </div>
                             <button type="submit" class="btn btn-primary">Signup</button>
                              <a href="/login" class="btn btn-outline-secondary">Login</a>
