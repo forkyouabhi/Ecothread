@@ -21,3 +21,6 @@
 ## 2024-05-25 - [Visual Hierarchy and Empty States in Admin Views]
 **Learning:** Having multiple primary buttons for destructive (Delete) and editing (Update) actions on the same card creates cognitive overload and increases the risk of accidental clicks. Additionally, list views without empty states leave users confused about next steps.
 **Action:** Always apply semantic button variants (`btn-outline-danger` for delete, `btn-outline-secondary` for edit) to differentiate actions. Provide an empty state with a clear, primary Call to Action (like "List a Product") when lists are empty.
+## 2024-05-18 - Immediate Visual Feedback for Async Actions
+**Learning:** The 'Add to Cart' functionality had a noticeable delay due to network requests, but the button only updated text without indicating an active process, leading to potential duplicate clicks or perceived unresponsiveness. Also, `button.innerText` overwrites internal HTML like icons/spinners, whereas `button.innerHTML` is required to insert visual components like Bootstrap spinners dynamically.
+**Action:** Use `button.innerHTML` when modifying button states to include spinners (like Bootstrap's `.spinner-border`) alongside text to provide immediate visual feedback for async actions.
