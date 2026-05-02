@@ -21,3 +21,7 @@
 ## 2024-05-25 - [Visual Hierarchy and Empty States in Admin Views]
 **Learning:** Having multiple primary buttons for destructive (Delete) and editing (Update) actions on the same card creates cognitive overload and increases the risk of accidental clicks. Additionally, list views without empty states leave users confused about next steps.
 **Action:** Always apply semantic button variants (`btn-outline-danger` for delete, `btn-outline-secondary` for edit) to differentiate actions. Provide an empty state with a clear, primary Call to Action (like "List a Product") when lists are empty.
+
+## 2024-05-18 - Improve Password Manager Compatibility and Form Accessibility
+**Learning:** Auth forms were lacking semantic IDs and explicit `autocomplete` attributes, causing password managers to fail silently or guess field types incorrectly.
+**Action:** Always add semantic IDs (`username`, `password`) and the correct `autocomplete` attributes (`username`, `current-password` or `new-password`) to login/signup fields, along with clear visual required indicators for accessibility.
