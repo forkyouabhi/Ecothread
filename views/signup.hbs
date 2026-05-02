@@ -17,13 +17,13 @@
                         <h1 class="card-title">Signup Page</h1>
                         <form action="/signup" class="loginLocal" method="POST">
                             <div class="mb-3">
-                                <label for="username" class="form-label">Username</label>
-                                <input type="text" class="form-control" name="username" id="username"
+                                <label for="username" class="form-label">Username <span class="text-danger" aria-hidden="true">*</span></label>
+                                <input type="text" class="form-control" name="username" id="username" autocomplete="username"
                                     placeholder="Enter Username" required>
                             </div>
                             <div class="mb-3">
-                                <label for="password" class="form-label">Password</label>
-                                <input type="password" class="form-control" name="password" id="password"
+                                <label for="password" class="form-label">Password <span class="text-danger" aria-hidden="true">*</span></label>
+                                <input type="password" class="form-control" name="password" id="password" autocomplete="new-password"
                                     placeholder="Enter Password" required>
                             </div>
                             <button type="submit" class="btn btn-primary">Signup</button>
