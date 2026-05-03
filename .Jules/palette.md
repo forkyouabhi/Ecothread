@@ -21,3 +21,7 @@
 ## 2024-05-25 - [Visual Hierarchy and Empty States in Admin Views]
 **Learning:** Having multiple primary buttons for destructive (Delete) and editing (Update) actions on the same card creates cognitive overload and increases the risk of accidental clicks. Additionally, list views without empty states leave users confused about next steps.
 **Action:** Always apply semantic button variants (`btn-outline-danger` for delete, `btn-outline-secondary` for edit) to differentiate actions. Provide an empty state with a clear, primary Call to Action (like "List a Product") when lists are empty.
+
+## 2026-05-03 - Authentication Form Autofill and Semantic IDs
+**Learning:** Using generic or incorrectly mapped IDs (like \`exampleInputEmail1\` for a username field) and missing \`autocomplete\` attributes significantly increases friction for users relying on password managers. Password managers may fail to properly associate the stored credentials with the corresponding input fields.
+**Action:** Always map the \`for\` attribute of labels exactly to semantic input \`id\`s (e.g., \`username\`, \`password\`). Additionally, apply appropriate \`autocomplete\` tags (such as \`username\`, \`current-password\`, and \`new-password\`) and \`autofocus\` on the initial field to reduce cognitive load and save clicks on forms where authentication is the primary objective.
