@@ -23,8 +23,11 @@
                             </div>
                             <div class="mb-3">
                                 <label for="password" class="form-label">Password</label>
-                                <input type="password" class="form-control" name="password" id="password"
-                                    placeholder="Enter Password" required>
+                                <div class="input-group">
+                                    <input type="password" class="form-control" name="password" id="password"
+                                        placeholder="Enter Password" required>
+                                    <button class="btn btn-outline-secondary" type="button" id="togglePassword" aria-label="Show password">Show</button>
+                                </div>
                             </div>
                             <button type="submit" class="btn btn-primary">Signup</button>
                              <a href="/login" class="btn btn-outline-secondary">Login</a>
@@ -33,6 +36,17 @@
                 </div>
             </div>
 
+    <script>
+        const togglePassword = document.querySelector('#togglePassword');
+        const password = document.querySelector('#password');
+
+        togglePassword.addEventListener('click', function (e) {
+            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+            password.setAttribute('type', type);
+            this.textContent = type === 'password' ? 'Show' : 'Hide';
+            this.setAttribute('aria-label', type === 'password' ? 'Show password' : 'Hide password');
+        });
+    </script>
 </body>
 
 </html>

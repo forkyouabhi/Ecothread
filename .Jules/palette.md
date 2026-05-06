@@ -21,3 +21,7 @@
 ## 2024-05-25 - [Visual Hierarchy and Empty States in Admin Views]
 **Learning:** Having multiple primary buttons for destructive (Delete) and editing (Update) actions on the same card creates cognitive overload and increases the risk of accidental clicks. Additionally, list views without empty states leave users confused about next steps.
 **Action:** Always apply semantic button variants (`btn-outline-danger` for delete, `btn-outline-secondary` for edit) to differentiate actions. Provide an empty state with a clear, primary Call to Action (like "List a Product") when lists are empty.
+
+## 2024-07-28 - Password Visibility Toggle
+**Learning:** Found that auth forms (login and signup) lacked a way for users to verify their typed passwords. Hidden passwords without a toggle often lead to typos, failed login attempts, and user frustration.
+**Action:** Always include a "Show/Hide" toggle button inside an input group for password fields, ensuring it updates the input type and its `aria-label` dynamically for accessibility.
