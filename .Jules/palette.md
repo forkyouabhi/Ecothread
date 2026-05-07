@@ -21,3 +21,6 @@
 ## 2024-05-25 - [Visual Hierarchy and Empty States in Admin Views]
 **Learning:** Having multiple primary buttons for destructive (Delete) and editing (Update) actions on the same card creates cognitive overload and increases the risk of accidental clicks. Additionally, list views without empty states leave users confused about next steps.
 **Action:** Always apply semantic button variants (`btn-outline-danger` for delete, `btn-outline-secondary` for edit) to differentiate actions. Provide an empty state with a clear, primary Call to Action (like "List a Product") when lists are empty.
+## 2026-05-07 - Accessible Loading States for Async Actions
+**Learning:** Users lack confidence during async UI actions if visual feedback is merely text ('Adding...'). Standard visual indicators (like spinners) instantly communicate background processing.
+**Action:** Always integrate standard visual spinners (e.g., Bootstrap `spinner-border`) with disabled states during async operations, and ensure redundant, non-accessible buttons are removed to maintain a clear path.
