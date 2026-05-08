@@ -21,3 +21,6 @@
 ## 2024-05-25 - [Visual Hierarchy and Empty States in Admin Views]
 **Learning:** Having multiple primary buttons for destructive (Delete) and editing (Update) actions on the same card creates cognitive overload and increases the risk of accidental clicks. Additionally, list views without empty states leave users confused about next steps.
 **Action:** Always apply semantic button variants (`btn-outline-danger` for delete, `btn-outline-secondary` for edit) to differentiate actions. Provide an empty state with a clear, primary Call to Action (like "List a Product") when lists are empty.
+## 2024-07-26 - Interactive and Visible Feedback
+**Learning:** System messages (like "Signup Successful" or "Invalid login") were displayed as plain text `<div>` elements without visual hierarchy or the ability to be dismissed. This makes them easy to miss and clutter the UI if they persist.
+**Action:** Always render server-side flash messages as visually distinct, dismissible alerts (e.g., using Bootstrap's `.alert-dismissible` component). This provides a clear, interactive visual cue for the user.
