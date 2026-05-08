@@ -12,7 +12,7 @@
     {{>navbar isAdmin=isAdmin}}
     
     <div class="container">
-        <div class="msg">{{msg}}</div>
+        {{> flashMessage}}
         {{> adminProducts products=products}}
     </div>
 </body>
