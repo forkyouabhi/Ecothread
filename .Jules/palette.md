@@ -21,3 +21,7 @@
 ## 2024-05-25 - [Visual Hierarchy and Empty States in Admin Views]
 **Learning:** Having multiple primary buttons for destructive (Delete) and editing (Update) actions on the same card creates cognitive overload and increases the risk of accidental clicks. Additionally, list views without empty states leave users confused about next steps.
 **Action:** Always apply semantic button variants (`btn-outline-danger` for delete, `btn-outline-secondary` for edit) to differentiate actions. Provide an empty state with a clear, primary Call to Action (like "List a Product") when lists are empty.
+
+## 2024-07-28 - Bootstrap Inline Validation Feedback
+**Learning:** Bootstrap forms utilizing the `needs-validation` class require a custom client-side JavaScript snippet to intercept form submissions and apply the `was-validated` class. Without this, inline `.invalid-feedback` UI messages will not be triggered when validation fails.
+**Action:** When using Bootstrap's `needs-validation` form class for inline error messages, always ensure the corresponding JavaScript is included on the page to intercept submissions and apply `was-validated`.
