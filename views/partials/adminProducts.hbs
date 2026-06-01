@@ -22,28 +22,9 @@
       </div>
        <div class="card-footer d-flex gap-2 justify-content-center flex-wrap">
         {{!-- <small class="price">$ <bold>{{product.price}}</bold> </small> --}}
-        <button class="btn btn-primary addToCart">Delete</button>
-        <button class="btn btn-primary addToCart">Update</button>
-        <button class="btn btn-primary addToCart">Details</button>
         <button type="button" class="btn btn-outline-danger" aria-label="Delete {{product.name}}">Delete</button>
         <button type="button" class="btn btn-outline-secondary" aria-label="Update {{product.name}}">Update</button>
         <button type="button" class="btn btn-primary" aria-label="Details for {{product.name}}">Details</button>
-      </div>
-    </div>
-  </div>
-  {{else}}
-  <div class="col-12 text-center py-5">
-    <div class="mb-3">
-      <span style="font-size: 3rem;" aria-hidden="true">📦</span>
-    </div>
-    <h4>No listings yet</h4>
-    <p class="text-muted mb-4">You haven't added any products to your store.</p>
-    <a href="/admin/add-product" class="btn btn-primary">List your first product</a>
-    <div class="card shadow-sm border-0">
-      <div class="card-body py-5">
-        <h4 class="card-title mb-3">No products yet</h4>
-        <p class="card-text text-muted mb-4">Start building your catalog by listing your first product.</p>
-        <a href="/admin/add-product" class="btn btn-primary btn-lg" aria-label="List a new product">List a Product</a>
       </div>
     </div>
   </div>
