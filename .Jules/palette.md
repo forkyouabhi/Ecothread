@@ -27,3 +27,6 @@
 ## 2024-06-04 - Autocomplete for authentication forms
 **Learning:** Proper use of `autocomplete` attributes (`username`, `current-password`, `new-password`) in authentication forms is critical for an optimal UX. It heavily reduces friction for users utilizing password managers to sign in or create accounts, increasing conversion rates.
 **Action:** Always verify that input fields handling credentials in login/signup flows have explicit, correct autocomplete attributes attached to them.
+## 2024-06-05 - Autocomplete Attributes for Authentication Forms
+**Learning:** Found that authentication forms (login/signup) were missing `autocomplete` attributes on username and password fields. This degrades UX by preventing password managers and browser autofill from seamlessly securely filling credentials, increasing friction.
+**Action:** Always include appropriate `autocomplete` attributes (`username`, `current-password` for login, `new-password` for signup) on authentication forms to ensure compatibility with password managers and reduce user friction.
