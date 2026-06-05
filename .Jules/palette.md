@@ -24,6 +24,9 @@
 ## 2024-05-31 - [Bootstrap Form Validation Feedback]
 **Learning:** Bootstrap's `.needs-validation` class alone does not trigger the visual display of `.invalid-feedback` messages upon form submission. Without client-side JavaScript to intercept the submission and apply the `.was-validated` class to the form, validation fails silently, leaving users confused about why their form submission did not work.
 **Action:** Always include a client-side JavaScript snippet to handle the form's `submit` event, call `event.preventDefault()` when invalid, and apply the `was-validated` class to any Bootstrap form that uses `needs-validation`.
+## 2024-06-04 - Autocomplete for authentication forms
+**Learning:** Proper use of `autocomplete` attributes (`username`, `current-password`, `new-password`) in authentication forms is critical for an optimal UX. It heavily reduces friction for users utilizing password managers to sign in or create accounts, increasing conversion rates.
+**Action:** Always verify that input fields handling credentials in login/signup flows have explicit, correct autocomplete attributes attached to them.
 ## 2024-06-05 - Autocomplete Attributes for Authentication Forms
 **Learning:** Found that authentication forms (login/signup) were missing `autocomplete` attributes on username and password fields. This degrades UX by preventing password managers and browser autofill from seamlessly securely filling credentials, increasing friction.
 **Action:** Always include appropriate `autocomplete` attributes (`username`, `current-password` for login, `new-password` for signup) on authentication forms to ensure compatibility with password managers and reduce user friction.
